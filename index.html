@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">N</div>
+        <div>
+          <h1>Nova AI</h1>
+          <p>Gemini-ready assistant</p>
+        </div>
+      </div>
+
+      <button class="primary-action" id="newChatBtn" type="button">
+        <span>+</span>
+        New Chat
+      </button>
+
+      <label class="search-box" for="searchChats">
+        <span>Search</span>
+        <input id="searchChats" type="search" placeholder="Search chats">
+      </label>
+
+      <section class="sidebar-section">
+        <div class="section-title">
+          <h2>Recent Chats</h2>
+          <span id="chatCount">0</span>
+        </div>
+        <div class="history-list" id="historyList"></div>
+      </section>
+
+      <section class="sidebar-section compact">
+        <div class="section-title">
+          <h2>Workspace</h2>
+        </div>
+        <button class="ghost-btn" id="exportBtn" type="button">Export Chat</button>
+        <button class="ghost-btn" id="clearBtn" type="button">Clear Current</button>
+        <button class="ghost-btn" id="themeBtn" type="button">Light Mode</button>
+      </section>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Toggle sidebar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="assistant-profile">
+          <div class="assistant-avatar">N</div>
+          <div>
+            <h2>Nova AI Assistant</h2>
+            <p><span class="status-dot"></span> Online and ready</p>
+          </div>
+        </div>
+
+        <div class="model-picker">
+          <label for="modelSelect">Model</label>
+          <select id="modelSelect">
+            <option>Gemini Flash</option>
+            <option>Gemini Pro</option>
+            <option>Nova Local</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="chat-shell">
+        <div class="chat-box" id="chatBox" aria-live="polite"></div>
+
+        <div class="prompt-panel" id="promptPanel">
+          <button class="prompt-card" type="button" data-prompt="Explain cloud computing with a simple real-life example.">
+            <strong>Cloud explainer</strong>
+            <span>Simple beginner-friendly explanation.</span>
+          </button>
+          <button class="prompt-card" type="button" data-prompt="Write clean Python code for a calculator with comments.">
+            <strong>Python code</strong>
+            <span>Generate practical starter code.</span>
+          </button>
+          <button class="prompt-card" type="button" data-prompt="Summarize this text into bullet points: ">
+            <strong>Summarize text</strong>
+            <span>Turn long content into key points.</span>
+          </button>
+          <button class="prompt-card" type="button" data-prompt="Generate a unique AI startup idea with target users and revenue model.">
+            <strong>Startup idea</strong>
+            <span>Brainstorm a sharp product concept.</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="composer">
+        <div class="composer-tools">
+          <button class="tool-btn" id="attachBtn" type="button" title="Attach file">Attach</button>
+          <button class="tool-btn" id="voiceBtn" type="button" title="Voice input">Voice</button>
+        </div>
+
+        <div class="input-wrap">
+          <textarea id="messageInput" rows="1" placeholder="Message Nova AI..." maxlength="4000"></textarea>
+          <div class="input-meta">
+            <span id="draftStatus">Saved locally</span>
+            <span id="charCount">0 / 4000</span>
+          </div>
+        </div>
+
+        <button class="send-btn" id="sendBtn" type="button" aria-label="Send message">Send</button>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <input class="hidden-file" id="fileInput" type="file" multiple>
+
+  <script src="script.js"></script>
+</body>
+</html>
