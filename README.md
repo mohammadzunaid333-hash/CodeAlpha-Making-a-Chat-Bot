@@ -119,7 +119,10 @@ using Live Server.
 **Mohammad Zunaid**
 
 - GitHub: https://github.com/mohammadzunaid333-hash
-- LinkedIn: www.linkedin.com/in/mohammad-zunaid-7a05b12b0
+- LinkedIn:www.linkedin.com/in/
+pinjari-mohammed-zunaid-14076527a
+
+
 
 ---
 
