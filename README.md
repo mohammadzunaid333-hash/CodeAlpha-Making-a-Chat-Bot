@@ -33,7 +33,9 @@ An intelligent AI-powered chatbot built using **FastAPI**, **Google Gemini AI**,
 
 ---
 
-Screenshot 2026-06-30 163905.png
+## 📸 Screenshot
+
+![Nova AI](screenshots/Screenshot%202026-06-30%20163905.png)
 
 
 ## 📂 Project Structure
