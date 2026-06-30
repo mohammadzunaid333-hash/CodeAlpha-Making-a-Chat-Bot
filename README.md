@@ -31,11 +31,6 @@ An intelligent AI-powered chatbot built using **FastAPI**, **Google Gemini AI**,
 - Google Gemini API
 - SQLite
 
----
-
-## 📸 Screenshot
-
-![Nova AI](screenshots/Screenshot%202026-06-30%20163905.png)
 
 
 ## 📂 Project Structure
