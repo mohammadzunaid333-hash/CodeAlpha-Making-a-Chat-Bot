@@ -33,6 +33,9 @@ An intelligent AI-powered chatbot built using **FastAPI**, **Google Gemini AI**,
 
 ---
 
+Screenshot 2026-06-30 163905.png
+
+
 ## 📂 Project Structure
 
 ```
